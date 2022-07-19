@@ -3,7 +3,11 @@ QGIS models and spatial Python for analyzing proximity between two spatial layer
 
 These models require QGIS to run, you can find help on downloading QGIS [here](https://www.qgis.org/en/site/forusers/download.html)
 
-To demonstrate how to use the following models, this repository contains a sample of EJAtlas data, as well as a geopackage with 2 shapefiles: simpleCountryBoundaries and protectedLandSouthAmerica. We will use the first model, [Summarize Data by Country](SummarizeDataByCountry.model3), to calculate the number of EJAtlas cases in each country with an outcome of compensation. We will use the second model, [Proximity Analysis](ProximityAnalysis.model3), to analyze how which protected lands, and how many, are in proximity to EJAtlas cases in South America.
+To demonstrate how to use the following models, this repository contains a sample of EJAtlas data, as well as a geopackage with 2 shapefiles: simpleCountryBoundaries and protectedLandSouthAmerica. The protected land data comes from Protected Planet:
+UNEP-WCMC and IUCN (2022), Protected Planet: The World Database on Protected Areas (WDPA) [Online], July 2022, Cambridge, UK: UNEP-WCMC and IUCN. Available at: www.protectedplanet.net.
+The sample EJAtlas data comes from the Environmental Justice Atlas: ejatlas.org
+
+We will use the first model, [Summarize Data by Country](SummarizeDataByCountry.model3), to calculate the number of EJAtlas cases in each country with an outcome of compensation. We will use the second model, [Proximity Analysis](ProximityAnalysis.model3), to analyze how which protected lands, and how many, are in proximity to EJAtlas cases in South America.
 
 ### Adding Models to QGIS
 
