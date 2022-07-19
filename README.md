@@ -5,7 +5,7 @@ These models require QGIS to run, you can find help on downloading QGIS [here](h
 
 To demonstrate how to use the following models, this repository contains a sample of EJAtlas data, as well as a geopackage with 2 shapefiles: simpleCountryBoundaries and protectedLandSouthAmerica. We will use the first model, [Summarize Data by Country](SummarizeDataByCountry.model3), to calculate the number of EJAtlas cases in each country with an outcome of compensation. We will use the second model, [Proximity Analysis](ProximityAnalysis.model3), to analyze how which protected lands, and how many, are in proximity to EJAtlas cases in South America.
 
-###Adding Models to QGIS
+### Adding Models to QGIS
 
 Open a new project in QGIS and then navigate to the processing toolbox. It should be the panel on the right hand side of
 your screen. If you don't see the processing toolbox, go to View > Panels > Processing Toolbox.
@@ -18,7 +18,7 @@ Navigate to where you downloaded the github repository, and click on the model3 
 
 The models will now appear under the models tab near the bottom of the processing toolbox.
 
-###Adding Data Geopackage and Data with Lat/Long Coordinates to QGIS
+### Adding Data Geopackage and Data with Lat/Long Coordinates to QGIS
 
 Navigate to your Proximity-Analysis-And-Summary folder in the QGIS browser. Drag the geopackage, ProximityAndSummaryGeopackage.gpkg into the layers panel. A new window will pop up asking which vector layers you would like to add. Make sure both layers are highlighted, then click ok.
 
@@ -77,7 +77,7 @@ Once it opens. You should see two new fields. The left field is the number of fe
 
 ![compensationByCountryDataTable](/images/compensationByCountryDataTable.png)
 
-###Proximity Analysis
+### Proximity Analysis
 
 First, choose the data layer in which you would like to analyze its proximity to a second data layer. The first data layer will be the input layer, the second layer will be the join layer. Also identify a field in each layer that can serve as a unique id.
 
