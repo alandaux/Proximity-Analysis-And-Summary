@@ -20,7 +20,7 @@ The models will now appear under the models tab near the bottom of the processin
 
 ###Adding Data Geopackage and Data with Lat/Long Coordinates to QGIS
 
-Navigate to your Proximity-Analysis-And-Summary folder in the QGIS browser. Drag the geopackage, proximityAnalysisAndSummaryPckg.gpkg into the layers panel. A new window will pop up asking which vector layers you would like to add. Make sure both layers are highlighted, then click ok.
+Navigate to your Proximity-Analysis-And-Summary folder in the QGIS browser. Drag the geopackage, ProximityAndSummaryGeopackage.gpkg into the layers panel. A new window will pop up asking which vector layers you would like to add. Make sure both layers are highlighted, then click ok.
 
 ![AddGeopackage](/images/AddGeopackage.png)
 
