@@ -44,7 +44,7 @@ Your map panel should look something like this:
 
 ![MapPanel1](/images/MapPanel1.png)
 
-###Summarize Data by Country
+### Summarize Data by Country
 
 Now that we have all the data we need to run our models. Let's start by using the Summarize Data By Country model to calculate the number of EJAtlas cases in each country where compensation is provided.
 
@@ -116,3 +116,43 @@ The second layer, EJCasesNearProtectedLands (input features with counted proximi
 ![ProximityAnalysisInputTable](/images/ProximityAnalysisInputTable.png)
 
 Note that the new fields in your output layers are named after the unique ID chosen to identify the features in the other layer.  
+
+Let's do some quick visualizations. First let's visualize which protected areas are in proximity to a lot of EJAtlas cases. Double click on the protectedLandsNearEJCases layer, go to the symbology panel, and choose graduated as the symbology type.
+
+![ProtectedAreasSymbology](/images/ProtectedAreasSymbology.png)
+
+Then choose the new field we just calculated with our proximity analysis, in this case the "Conflict I" field, which is the number of EJAtlas cases within 10km of each protected area.
+
+![ProtectedAreasSymbology2](/images/ProtectedAreasSymbology2.png)
+
+Then we choose what kind of mode we want to use for our legend, let's choose Natural Breaks in this case. Then hit okay.
+
+You should get a map that looks similar to this. Where the reddest protected areas are those near the most EJAtlas cases.
+
+![ProtectedAreasSymbology3](/images/ProtectedAreasSymbology3.png)
+
+To visualize the EJAtlas points, we need to do a bit more. The model turns the points into a polygon layer, in order to measure the distance between features. If we want to actually see the data with our eyes, we first need to turn the EJAtlas cases back into points, using the centroid tool.
+
+You can find the centroid tool by searching centroid in the processing toolbox, and it can be found under vector geometry.
+
+![CentroidsTool](/images/CentroidsTool.png)
+
+We want to run the centroid tool on EJCasesNearProtectedLands, and we want to save our output to a file, let's call it EJCasesNearProtectedLandsCentroids. Then click run.
+
+![CentroidsTool2](/images/CentroidsTool2.png)
+
+With our new layer, EJCasesNearProtectedLandsCentroids, double click. Navigate to the symbology pane, and again we are going to choose graduated as our symbology type.
+
+![EJCasesSymbology](/images/EJCasesSymbology.png)
+
+Then choose the new field we just calculated with our proximity analysis, in this case the "fid_count" field, which is the number of protected lands within 10km of each EJAtlas case.
+
+![EJCasesSymbology2](/images/EJCasesSymbology2.png)
+
+Then we choose what kind of mode we want to use for our legend, let's choose Natural Breaks in this case. Then hit okay.
+
+![EJCasesSymbology3](/images/EJCasesSymbology3.png)
+
+You should get a map that looks similar to this. Where the reddest points are EJAtlas cases near the most protected areas.
+
+![EJCasesSymbology4](/images/EJCasesSymbology4.png)
