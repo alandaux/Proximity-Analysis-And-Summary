@@ -1,0 +1,255 @@
+<!DOCTYPE model>
+<Option type="Map">
+  <Option type="Map" name="children">
+    <Option type="Map" name="qgis:joinbylocationsummary_1">
+      <Option type="bool" value="true" name="active"/>
+      <Option name="alg_config"/>
+      <Option type="QString" value="qgis:joinbylocationsummary" name="alg_id"/>
+      <Option type="QString" value="" name="color"/>
+      <Option type="Map" name="comment">
+        <Option type="QString" value="" name="color"/>
+        <Option type="QString" value="" name="component_description"/>
+        <Option type="double" value="60" name="component_height"/>
+        <Option type="double" value="806.6666666666666" name="component_pos_x"/>
+        <Option type="double" value="128.33333333333331" name="component_pos_y"/>
+        <Option type="double" value="100" name="component_width"/>
+        <Option type="bool" value="true" name="outputs_collapsed"/>
+        <Option type="bool" value="true" name="parameters_collapsed"/>
+      </Option>
+      <Option type="QString" value="Join attributes by location (summary)" name="component_description"/>
+      <Option type="double" value="30" name="component_height"/>
+      <Option type="double" value="486.66666666666663" name="component_pos_x"/>
+      <Option type="double" value="166.66666666666666" name="component_pos_y"/>
+      <Option type="double" value="200" name="component_width"/>
+      <Option name="dependencies"/>
+      <Option type="QString" value="qgis:joinbylocationsummary_1" name="id"/>
+      <Option type="Map" name="outputs">
+        <Option type="Map" name="dataSummarizedByCountry">
+          <Option type="QString" value="qgis:joinbylocationsummary_1" name="child_id"/>
+          <Option type="QString" value="" name="color"/>
+          <Option type="Map" name="comment">
+            <Option type="QString" value="" name="color"/>
+            <Option type="QString" value="" name="component_description"/>
+            <Option type="double" value="60" name="component_height"/>
+            <Option type="double" value="0" name="component_pos_x"/>
+            <Option type="double" value="0" name="component_pos_y"/>
+            <Option type="double" value="100" name="component_width"/>
+            <Option type="bool" value="true" name="outputs_collapsed"/>
+            <Option type="bool" value="true" name="parameters_collapsed"/>
+          </Option>
+          <Option type="QString" value="dataSummarizedByCountry" name="component_description"/>
+          <Option type="double" value="30" name="component_height"/>
+          <Option type="double" value="806.6666666666666" name="component_pos_x"/>
+          <Option type="double" value="218.33333333333331" name="component_pos_y"/>
+          <Option type="double" value="200" name="component_width"/>
+          <Option type="invalid" name="default_value"/>
+          <Option type="bool" value="false" name="mandatory"/>
+          <Option type="QString" value="dataSummarizedByCountry" name="name"/>
+          <Option type="QString" value="OUTPUT" name="output_name"/>
+          <Option type="bool" value="true" name="outputs_collapsed"/>
+          <Option type="bool" value="true" name="parameters_collapsed"/>
+        </Option>
+      </Option>
+      <Option type="bool" value="true" name="outputs_collapsed"/>
+      <Option type="bool" value="true" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="DISCARD_NONMATCHING">
+          <Option type="Map">
+            <Option type="int" value="2" name="source"/>
+            <Option type="bool" value="true" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option type="QString" value="CountryBoundaries" name="parameter_name"/>
+            <Option type="int" value="0" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="JOIN">
+          <Option type="Map">
+            <Option type="QString" value="DataToSummarize" name="parameter_name"/>
+            <Option type="int" value="0" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="JOIN_FIELDS">
+          <Option type="Map">
+            <Option type="QString" value="DataFieldToSummarize" name="parameter_name"/>
+            <Option type="int" value="0" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="PREDICATE">
+          <Option type="Map">
+            <Option type="int" value="2" name="source"/>
+            <Option type="List" name="static_value">
+              <Option type="int" value="0"/>
+            </Option>
+          </Option>
+        </Option>
+        <Option type="List" name="SUMMARIES">
+          <Option type="Map">
+            <Option type="int" value="2" name="source"/>
+            <Option type="List" name="static_value">
+              <Option type="int" value="0"/>
+              <Option type="int" value="5"/>
+            </Option>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option type="Map" name="designerParameterValues">
+    <Option type="List" name="DataFieldToSummarize">
+      <Option type="QString" value="Product: Coal"/>
+    </Option>
+    <Option type="QString" value="Joined_layer_bf0febc9_31b6_424b_9e46_8d50e65affff" name="DataToSummarize"/>
+    <Option type="bool" value="true" name="VERBOSE_LOG"/>
+    <Option type="QgsProcessingOutputLayerDefinition" name="qgis:joinbylocationsummary_1:dataSummarizedByCountry">
+      <Option type="Map">
+        <Option type="Map" name="create_options">
+          <Option type="QString" value="System" name="fileEncoding"/>
+        </Option>
+        <Option type="Map" name="sink">
+          <Option type="bool" value="true" name="active"/>
+          <Option type="int" value="1" name="type"/>
+          <Option type="QString" value="TEMPORARY_OUTPUT" name="val"/>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option name="groupBoxes"/>
+  <Option type="Map" name="help">
+    <Option type="QString" value="Arielle Landau" name="ALG_CREATOR"/>
+    <Option type="QString" value="You can use this model to summarize data by country. It will count the number of data points per country, and summarize the chosen data field." name="ALG_DESC"/>
+    <Option type="QString" value="" name="ALG_HELP_CREATOR"/>
+    <Option type="QString" value="Fields to sum together at the country level. Summaries can be calculated for one or more fields. " name="DataFieldToSummarize"/>
+    <Option type="QString" value="Vector layer containing the data you wish to summarize" name="DataToSummarize"/>
+    <Option type="QString" value="" name="HELP_URL"/>
+    <Option type="QString" value="" name="SHORT_DESCRIPTION"/>
+    <Option type="QString" value="Outputs a data table with one row per country, with new data fields: count (number of data points summarized for each country) and sum (summed values of chosen data field by country)" name="qgis:joinbylocationsummary_1:dataSummarizedByCountry"/>
+  </Option>
+  <Option name="modelVariables"/>
+  <Option type="QString" value="" name="model_group"/>
+  <Option type="QString" value="Summarize Data by Country" name="model_name"/>
+  <Option type="Map" name="parameterDefinitions">
+    <Option type="Map" name="CountryBoundaries">
+      <Option type="List" name="data_types">
+        <Option type="int" value="2"/>
+      </Option>
+      <Option type="invalid" name="default"/>
+      <Option type="invalid" name="defaultGui"/>
+      <Option type="QString" value="CountryBoundaries" name="description"/>
+      <Option type="int" value="0" name="flags"/>
+      <Option type="QString" value="" name="help"/>
+      <Option name="metadata"/>
+      <Option type="QString" value="CountryBoundaries" name="name"/>
+      <Option type="QString" value="vector" name="parameter_type"/>
+    </Option>
+    <Option type="Map" name="DataFieldToSummarize">
+      <Option type="bool" value="true" name="allow_multiple"/>
+      <Option type="int" value="-1" name="data_type"/>
+      <Option type="QString" value="" name="default"/>
+      <Option type="invalid" name="defaultGui"/>
+      <Option type="bool" value="false" name="default_to_all_fields"/>
+      <Option type="QString" value="Data Field(s) To Summarize" name="description"/>
+      <Option type="int" value="0" name="flags"/>
+      <Option type="QString" value="Fields to sum together at the country level. Summaries can be calculated for one or more fields. " name="help"/>
+      <Option name="metadata"/>
+      <Option type="QString" value="DataFieldToSummarize" name="name"/>
+      <Option type="QString" value="field" name="parameter_type"/>
+      <Option type="QString" value="DataToSummarize" name="parent_layer"/>
+    </Option>
+    <Option type="Map" name="DataToSummarize">
+      <Option type="List" name="data_types">
+        <Option type="int" value="-1"/>
+      </Option>
+      <Option type="invalid" name="default"/>
+      <Option type="invalid" name="defaultGui"/>
+      <Option type="QString" value="Data To Summarize" name="description"/>
+      <Option type="int" value="0" name="flags"/>
+      <Option type="QString" value="Vector layer containing the data you wish to summarize" name="help"/>
+      <Option name="metadata"/>
+      <Option type="QString" value="DataToSummarize" name="name"/>
+      <Option type="QString" value="vector" name="parameter_type"/>
+    </Option>
+    <Option type="Map" name="qgis:joinbylocationsummary_1:dataSummarizedByCountry">
+      <Option type="bool" value="true" name="create_by_default"/>
+      <Option type="int" value="-1" name="data_type"/>
+      <Option type="invalid" name="default"/>
+      <Option type="invalid" name="defaultGui"/>
+      <Option type="QString" value="dataSummarizedByCountry" name="description"/>
+      <Option type="int" value="0" name="flags"/>
+      <Option type="QString" value="" name="help"/>
+      <Option name="metadata"/>
+      <Option type="QString" value="qgis:joinbylocationsummary_1:dataSummarizedByCountry" name="name"/>
+      <Option type="QString" value="sink" name="parameter_type"/>
+      <Option type="bool" value="false" name="supports_append"/>
+      <Option type="bool" value="true" name="supports_non_file_outputs"/>
+    </Option>
+  </Option>
+  <Option name="parameterOrder"/>
+  <Option type="Map" name="parameters">
+    <Option type="Map" name="CountryBoundaries">
+      <Option type="QString" value="" name="color"/>
+      <Option type="Map" name="comment">
+        <Option type="QString" value="" name="color"/>
+        <Option type="QString" value="" name="component_description"/>
+        <Option type="double" value="60" name="component_height"/>
+        <Option type="double" value="417.3333333333333" name="component_pos_x"/>
+        <Option type="double" value="284.3333333333333" name="component_pos_y"/>
+        <Option type="double" value="100" name="component_width"/>
+        <Option type="bool" value="true" name="outputs_collapsed"/>
+        <Option type="bool" value="true" name="parameters_collapsed"/>
+      </Option>
+      <Option type="QString" value="CountryBoundaries" name="component_description"/>
+      <Option type="double" value="30" name="component_height"/>
+      <Option type="double" value="217.33333333333331" name="component_pos_x"/>
+      <Option type="double" value="329.3333333333333" name="component_pos_y"/>
+      <Option type="double" value="200" name="component_width"/>
+      <Option type="QString" value="CountryBoundaries" name="name"/>
+      <Option type="bool" value="true" name="outputs_collapsed"/>
+      <Option type="bool" value="true" name="parameters_collapsed"/>
+    </Option>
+    <Option type="Map" name="DataFieldToSummarize">
+      <Option type="QString" value="" name="color"/>
+      <Option type="Map" name="comment">
+        <Option type="QString" value="" name="color"/>
+        <Option type="QString" value="" name="component_description"/>
+        <Option type="double" value="60" name="component_height"/>
+        <Option type="double" value="442.66666666666663" name="component_pos_x"/>
+        <Option type="double" value="207" name="component_pos_y"/>
+        <Option type="double" value="100" name="component_width"/>
+        <Option type="bool" value="true" name="outputs_collapsed"/>
+        <Option type="bool" value="true" name="parameters_collapsed"/>
+      </Option>
+      <Option type="QString" value="DataFieldToSummarize" name="component_description"/>
+      <Option type="double" value="30" name="component_height"/>
+      <Option type="double" value="181.7191881859328" name="component_pos_x"/>
+      <Option type="double" value="102.74086902677422" name="component_pos_y"/>
+      <Option type="double" value="200" name="component_width"/>
+      <Option type="QString" value="DataFieldToSummarize" name="name"/>
+      <Option type="bool" value="true" name="outputs_collapsed"/>
+      <Option type="bool" value="true" name="parameters_collapsed"/>
+    </Option>
+    <Option type="Map" name="DataToSummarize">
+      <Option type="QString" value="" name="color"/>
+      <Option type="Map" name="comment">
+        <Option type="QString" value="" name="color"/>
+        <Option type="QString" value="" name="component_description"/>
+        <Option type="double" value="60" name="component_height"/>
+        <Option type="double" value="369.3333333333333" name="component_pos_x"/>
+        <Option type="double" value="84.33333333333331" name="component_pos_y"/>
+        <Option type="double" value="100" name="component_width"/>
+        <Option type="bool" value="true" name="outputs_collapsed"/>
+        <Option type="bool" value="true" name="parameters_collapsed"/>
+      </Option>
+      <Option type="QString" value="DataToSummarize" name="component_description"/>
+      <Option type="double" value="30" name="component_height"/>
+      <Option type="double" value="200.42898561942206" name="component_pos_x"/>
+      <Option type="double" value="182.8178552654059" name="component_pos_y"/>
+      <Option type="double" value="200" name="component_width"/>
+      <Option type="QString" value="DataToSummarize" name="name"/>
+      <Option type="bool" value="true" name="outputs_collapsed"/>
+      <Option type="bool" value="true" name="parameters_collapsed"/>
+    </Option>
+  </Option>
+</Option>
