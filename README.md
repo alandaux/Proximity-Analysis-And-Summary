@@ -9,6 +9,14 @@ The sample EJAtlas data comes from the Environmental Justice Atlas: ejatlas.org
 
 We will use the first model, [Summarize Data by Country](SummarizeDataByCountry.model3), to calculate the number of EJAtlas cases in each country with an outcome of compensation. We will use the second model, [Proximity Analysis](ProximityAnalysis.model3), to analyze how which protected lands, and how many, are in proximity to EJAtlas cases in South America.
 
+### Downloading Github repository
+
+To start, first download this github repository. In the top right corner of the repository home page, click on code in the top right corner, and then download ZIP.
+
+![DownloadZip](/images/DownloadZip.png)
+
+Open your zip file and save the folder in a convenient place.
+
 ### Adding Models to QGIS
 
 Open a new project in QGIS and then navigate to the processing toolbox. It should be the panel on the right hand side of
@@ -18,7 +26,7 @@ Hover over the gear icon in the top left of the processing toolbox, and click on
 
 ![Add Model to Toolbox](/images/AddModelToToolbox.png)
 
-Navigate to where you downloaded the github repository, and click on the model3 files to add them to your processing toolbox.
+Navigate to where you downloaded the github repository/zip file, and click on the model3 files to add them to your processing toolbox.
 
 The models will now appear under the models tab near the bottom of the processing toolbox.
 
